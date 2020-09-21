@@ -23,7 +23,17 @@
 					</td>
 					<td><%= link_to @booker.title, book_path(@booker) %></td>
 					<td><%= @booker.body %></td>
-					<td>いいね</td>
+					<td><% if @booker.favorited_by?(current_user) %>
+			                <%= link_to book_favorite_path(@booker), method: :delete do %>
+			                   <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+			                   <%= @booker.favorites.count %>
+			                <% end %>
+			            <% else %>
+			                <%= link_to book_favorites_path(@booker), method: :post do %>
+			                   <i class="fa fa-heart-o" aria-hidden="true"></i>
+			                   <%= @booker.favorites.count %>
+			                <% end %>
+			            <% end %></td>
 					<td>コメント数：<%= @booker.book_comments.count %></td>
 					<% if current_user == @booker.user %>
 						<td><%= link_to "Edit", edit_book_path(@booker), class: "btn-sm btn-success edit_book_#{@booker.id}" %></td>
@@ -37,7 +47,7 @@
 				<tr>
 					<td>
 					    <%= link_to user_path(bc.user) do %>
-							<%= attachment_image_tag(bc.user, :profile_image, :fill, 100, 100, fallback: "no-image-mini.jpg") %><br>
+							<%= attachment_image_tag(bc.user, :profile_image, :fill, 60, 60, fallback: "no-image-mini.jpg") %><br>
 							<%= bc.user.name %>
 						<% end %>
 					</td>
