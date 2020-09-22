@@ -7,6 +7,7 @@ class FavoritesController < ApplicationController
 	  # favorite.user_id = current_user.id
     favorite.save
     redirect_back(fallback_location: root_path)
+    # redirect_to request.referer　redirect_backと同じぽい
   end
 
 

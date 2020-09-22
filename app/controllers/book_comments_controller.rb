@@ -1,17 +1,19 @@
 class BookCommentsController < ApplicationController
   def create
-  	book = Book.find(params[:book_id])
+  	@book = Book.find(params[:book_id])
     @book_comment = current_user.book_comments.new(book_comment_params)
  	# comment = BookComment.new(book_comment_params)
 	# comment.user_id = current_user.id
-    @book_comment.book_id = book.id
+    @book_comment.book_id = @book.id
     if @book_comment.save
-       redirect_to book_path(book)
+       # redirect_to book_path(@book)
+       redirect_to request.referer
     else
-    	@book = Book.new
-	    @booker = Book.find(params[:book_id])
-	    @user = User.find(current_user.id)
-       render 'books/show'
+    	# @book = Book.new
+	    # @booker = Book.find(params[:book_id])
+	    # @user = User.find(current_user.id)
+     #  redirect_to book_path(@book)
+      redirect_to request.referer
     end
   end
 
