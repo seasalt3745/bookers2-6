@@ -8,13 +8,16 @@ class User < ApplicationRecord
   has_many :book_comments, dependent: :destroy
   attachment :profile_image, destroy: false
 
+  validates :name, length: {maximum: 20, minimum: 2}
+  validates :introduction, length: { maximum: 50 }
+
 
 # 能動的関係=フォローしている人の情報
-  has_many :relationships, dependent: :destroy
-  has_many :followings, through: :relationships, source: :follow
+  has_many :relationships, dependent: :destroy # フォローしてる人取得？
+  has_many :followings, through: :relationships, source: :follow # sourceはモデルから　# 自分がフォローしている人
 # 受動的関係＝フォロワー、フォローしてくる人の情報
-  has_many :reverse_of_relationships, class_name: 'Relationship', foreign_key: 'follow_id', dependent: :destroy
-  has_many :followers, through: :reverse_of_relationships, source: :user
+  has_many :reverse_of_relationships, class_name: 'Relationship', foreign_key: 'follow_id', dependent: :destroy # フォロワー取得
+  has_many :followers, through: :reverse_of_relationships, source: :user # 自分をフォローしている人
 
 # throughオプションによりrelationships経由でfollowings・followersにアクセスできるようになる＝relationshipは中間テーブルであるという意味付け
 # = 架空のモデルを介して、対象のモデルと多対多の関連付け => これにより情報抽出可能
@@ -24,11 +27,8 @@ class User < ApplicationRecord
 # user_id = 人、follow_id = アンカー　人とアンカーは紐で繋がってる（relationshipテーブル）
 
 
-  validates :name, length: {maximum: 20, minimum: 2}
-  validates :introduction, length: { maximum: 50 }
-
 #フォローする
-  def follow(other_user)
+  def follow(other_user)　#other_userには、例えばfollowing = current_user.follow(user)の()内が自動で代入される
     unless self == other_user
       self.relationships.find_or_create_by(follow_id: other_user.id)
     end
@@ -40,7 +40,7 @@ class User < ApplicationRecord
     relationship.destroy if relationship #existなら
   end
 
-#フォローしてるか確認する
+#フォローしてるか確認する(してればtrueを返す)
   def following?(other_user)
     self.followings.include?(other_user)
   end
