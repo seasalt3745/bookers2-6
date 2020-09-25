@@ -28,7 +28,7 @@ class User < ApplicationRecord
 
 
 #フォローする
-  def follow(other_user)　#other_userには、例えばfollowing = current_user.follow(user)の()内が自動で代入される
+  def follow(other_user)#other_userには、例えばfollowing = current_user.follow(user)の()内が自動で代入される
     unless self == other_user
       self.relationships.find_or_create_by(follow_id: other_user.id)
     end
@@ -44,6 +44,7 @@ class User < ApplicationRecord
   def following?(other_user)
     self.followings.include?(other_user)
   end
+
 
 end
 
