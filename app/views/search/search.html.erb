@@ -1,33 +1,3 @@
-<h1>Users search for ''</h1>
-
-<% if @user_or_book == "1"%>
-    <table>
-        <% @users.each do |user| %>
-        <thead>
-            <tr>
-                <th></th>
-                <th><%= user.name %> </th>
-            </tr>
-        </thead>
-        <% end %>
-    </table>
-
-<% elsif @user_or_book == "2" %>
-    <table>
-    <% @books.each do |book| %>
-        <thead>
-            <tr>
-                <th></th>
-                <th><%= book.title %></th>
-            </tr>
-        </thead>
-    <% end %>
-    </table>
-<% else %>
-<% end %>
-
-
-
 <% if @model == '1' %>
   <h3>Users search for '<%= @content %>'</h3>
 
