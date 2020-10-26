@@ -1,7 +1,7 @@
 <h1>Follower Users</h1>
 
 <table class="table">
-			<thead>
+			<thead class="">
 				<tr>
 					<th>image</th>
 					<th>name</th>
@@ -11,7 +11,7 @@
 				</tr>
 			</thead>
 
-			<tbody>
+			<tbody class="">
 				<% @users.each do |user| %>
 				<tr>
 					<td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no-image-mini.jpg") %></td>
