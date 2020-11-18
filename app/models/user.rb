@@ -10,6 +10,7 @@ class User < ApplicationRecord
 
   validates :name, length: {maximum: 20, minimum: 2}
   validates :introduction, length: { maximum: 50 }
+  before_save { self.email = email.downcase }
 
 
 # 能動的関係=フォローしている人の情報
