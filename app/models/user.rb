@@ -48,6 +48,9 @@ class User < ApplicationRecord
     self.followings.include?(other_user)
   end
 
+  def remember_me
+    true
+  end
 
 end
 
