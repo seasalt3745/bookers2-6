@@ -25,6 +25,15 @@ class UsersController < ApplicationController
     end
   end
 
+  # def hide
+  # end
+
+  # def withdrawal
+  #       @user.update(is_deleted: true)
+  #       reset_session
+  #       redirect_to root_path
+  # end
+
   private
   def user_params
     params.require(:user).permit(:name, :introduction, :profile_image)
