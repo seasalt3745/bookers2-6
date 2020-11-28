@@ -67,3 +67,25 @@ gem 'refile', require: 'refile/rails', github: 'manfe/refile'
 gem 'refile-mini_magick'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
+
+
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'devise'
+# gem 'ransack'
+# gem 'jquery-rails'
+# gem "jquery-ui-rails"
+# gem 'refile', require: 'refile/rails', github: 'manfe/refile'
+# gem 'refile-mini_magick'
+# gem 'pagy'#ページネーション
+# gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'font-awesome-sass'
+# gem 'gretel'#パンくずリスト
+# gem 'rails-i18n'#ja.ymlに日本語にしたいのを記述
+# gem 'devise-i18n'
+# gem 'devise-i18n-views'
+# gem 'rename'#アプリ名変更したい場合
+# gem 'jp_prefecture'
+# gem 'active_hash'#擬似モデルjp_prefectureなどと
+# gem "refile-s3"#awsのs3に画像を保存
+# gem 'aws-sdk-s3'#これもawsのs3に画像を保存？
+# gem 'jquery-turbolinks'
