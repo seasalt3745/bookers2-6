@@ -89,3 +89,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # gem "refile-s3"#awsのs3に画像を保存
 # gem 'aws-sdk-s3'#これもawsのs3に画像を保存？
 # gem 'jquery-turbolinks'
+
+# gem 'dotenv-rails'
+# gem 'capistrano'
+# gem 'capistrano-rails'
+# gem 'capistrano3-puma'
+# gem 'capistrano-rbenv'
+# gem 'capistrano-bundler'
