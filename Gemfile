@@ -42,6 +42,17 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'#seedの便利版？
+  # gem 'rails-controller-testing'#controller spec じゃなくてrequest sepc に書いてね？
+  gem 'ffaker'#ダミーデータの高速版
+  gem 'bullet'#N＋１問題を検知及び通知
+  gem 'bundle_outdated_formatter'
+  # gem 'rubocop', '0.35.1', require: false
+  # gem 'onkcop'#コーティングを統一（綺麗になる？）
 end
 
 group :development do
