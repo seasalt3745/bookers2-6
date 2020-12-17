@@ -14,3 +14,7 @@
 #     require path
 #   end
 # end
+
+# users = User.create!([
+#   {name: 'テストユーザー', email: 'test-user@test.jp', password: '123456', password_confirmation: '123456'},
+# ])
