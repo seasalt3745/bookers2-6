@@ -18,3 +18,10 @@
 # users = User.create!([
 #   {name: 'テストユーザー', email: 'test-user@test.jp', password: '123456', password_confirmation: '123456'},
 # ])
+
+# ユーザーージャンル中間データ投入
+# CSV.foreach('db/csv/seed_user_genres.csv', headers: true) do |row|
+#   UserGenre.create!(
+#     user_id: row['user_id'],
+#     genre_id: row['genre_id'],
+#   )
