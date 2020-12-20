@@ -25,3 +25,18 @@
 #     user_id: row['user_id'],
 #     genre_id: row['genre_id'],
 #   )
+
+# ユーザーデータ投入
+# CSV.foreach('db/csv/seed_users.csv', headers: true) do |row|
+#   User.create!(
+#     name: row['name'],
+#     area: row['area'],
+#     experience: row['experience'],
+#     stance: row['stance'],
+#     history: row['history'],
+#     introduction: row['introduction'],
+#     email: row['email'],
+#     password: row['password'],
+#     password_confirmation: row['password_confirmation'],
+#   )
+# end
