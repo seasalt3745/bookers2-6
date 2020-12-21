@@ -19,6 +19,14 @@
 #   {name: 'テストユーザー', email: 'test-user@test.jp', password: '123456', password_confirmation: '123456'},
 # ])
 
+# genres = Genre.create!([
+#   {name: 'クラシック'},
+#   {name: 'ジャズ'},
+#   {name: 'Jポップ'},
+#   {name: 'ボカロ'},
+#   {name: 'アニソン'},
+# ])
+
 # ユーザーージャンル中間データ投入
 # CSV.foreach('db/csv/seed_user_genres.csv', headers: true) do |row|
 #   UserGenre.create!(
