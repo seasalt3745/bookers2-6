@@ -19,6 +19,21 @@
 #   {name: 'テストユーザー', email: 'test-user@test.jp', password: '123456', password_confirmation: '123456'},
 # ])
 
+# instruments = Instrument.create!([
+#   {name: 'ピアノ'},
+#   {name: 'サックス'},
+#   {name: 'クラリネット'},
+#   {name: 'フルート'},
+#   {name: 'ファゴット'},
+#   {name: 'トランペット'},
+#   {name: 'チューバ'},
+#   {name: 'トロンボーン'},
+#   {name: '打楽器'},
+#   {name: 'ボーカル'},
+#   {name: '声楽'},
+#   {name: 'アカペラ'},
+# ])
+
 # genres = Genre.create!([
 #   {name: 'クラシック'},
 #   {name: 'ジャズ'},
