@@ -2,3 +2,10 @@
   display: flex;
   align-items: center;
 }
+
+@mixin before-triangle {
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    
