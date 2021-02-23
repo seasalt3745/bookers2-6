@@ -37,3 +37,7 @@
     }
   }
 }
+
+@mixin content-hover {
+  &:hover {
+    opacity: 0.8;
