@@ -45,3 +45,8 @@
     border: $border_style_hover;
   }
 }
+
+@mixin action-link {
+  &:hover a {
+    color: orange;
+  }
