@@ -9,3 +9,7 @@ body::-webkit-scrollbar {
 
 body {
   overflow-x: scroll;
+  .main {
+    .wrapper {
+      max-width: $wrapper_max_width;
+      min-width: $wrapper_min_width;
