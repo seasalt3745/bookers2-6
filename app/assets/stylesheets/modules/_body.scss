@@ -13,3 +13,5 @@ body {
     .wrapper {
       max-width: $wrapper_max_width;
       min-width: $wrapper_min_width;
+      width: 100%;
+      margin: 0 auto;
