@@ -18,3 +18,9 @@ body {
       padding: 0 240px 0;
       .breadcrumbs {
         @include up-down-center;
+        padding: 16px 0;
+        font-size: $fSize_content;
+        color: $color_no_action;
+        & a {
+          text-decoration: none;
+          color: $link_color;
