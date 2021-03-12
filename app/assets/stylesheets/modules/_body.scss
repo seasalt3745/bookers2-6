@@ -24,3 +24,6 @@ body {
         & a {
           text-decoration: none;
           color: $link_color;
+          &:hover {
+            text-decoration: underline;
+          }
