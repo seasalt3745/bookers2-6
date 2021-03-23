@@ -11,3 +11,5 @@
     &__top {
       @include up-down-center;
       height: 50%;
+      border-bottom: $border_style_inner;
+      text-align: center;
