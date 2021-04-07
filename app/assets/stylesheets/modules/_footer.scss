@@ -34,3 +34,6 @@
         }
       }
     }
+    &__bottom {
+      @include up-down-center;
+      justify-content: space-between;
