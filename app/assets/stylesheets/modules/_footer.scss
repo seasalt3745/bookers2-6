@@ -37,3 +37,5 @@
     &__bottom {
       @include up-down-center;
       justify-content: space-between;
+      height: 50%;
+      color: $menu_color_gray;
