@@ -51,3 +51,6 @@
         &__link {
           padding: 0 8px;
           font-size: $fSize_content;
+          a {
+            color: $color_no_action;
+          }
