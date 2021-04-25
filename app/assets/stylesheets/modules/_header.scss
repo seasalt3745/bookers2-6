@@ -4,3 +4,6 @@ header {
   background-color: white;
   .header__border {
     min-width: $wrapper_min_width;
+    height: 96px;
+    border-bottom: $border_style_inner;
+  }
