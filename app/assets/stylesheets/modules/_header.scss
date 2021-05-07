@@ -22,3 +22,5 @@ header {
         color: $menu_color_gray;
         font-size: $fSize_content;
       }
+      .menu {
+        @include up-down-center;
