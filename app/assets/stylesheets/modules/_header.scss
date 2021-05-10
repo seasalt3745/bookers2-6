@@ -25,3 +25,5 @@ header {
       .menu {
         @include up-down-center;
         position: relative;
+        .menu-list {
+          @include up-down-center;
