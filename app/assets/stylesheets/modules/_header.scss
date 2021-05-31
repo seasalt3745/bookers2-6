@@ -46,3 +46,7 @@ header {
             margin-right: 4px;
             border-radius: 6px;
             object-fit: cover;
+            &:hover {
+              opacity: $hover_opacity;
+            }
+          }
