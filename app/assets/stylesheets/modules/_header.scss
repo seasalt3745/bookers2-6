@@ -68,3 +68,5 @@ header {
               background-color: gray;
               text-align: left;
               .option-link {
+                @include up-down-center;
+                width: 100%;
