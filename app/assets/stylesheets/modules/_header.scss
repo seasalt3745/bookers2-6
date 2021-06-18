@@ -74,3 +74,10 @@ header {
                 padding-left: 16px;
                 color: $menu_color_white;
                 text-align: center;
+                @include before-triangle;
+              }
+            }
+          }
+        }
+      }
+    }
