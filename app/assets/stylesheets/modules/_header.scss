@@ -85,3 +85,5 @@ header {
       width: 100%;
       height: 56px;
       .search-form {
+        @include up-down-center;
+        justify-content: space-between;
