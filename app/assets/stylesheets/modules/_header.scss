@@ -87,3 +87,5 @@ header {
       .search-form {
         @include up-down-center;
         justify-content: space-between;
+        width: 100%;
+        font-size: $fSize_content;
