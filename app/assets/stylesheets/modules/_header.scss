@@ -95,3 +95,7 @@ header {
             height: 56px;
             object-fit: cover;
           }
+          & a:hover {
+            text-decoration: none;
+          }
+        }
