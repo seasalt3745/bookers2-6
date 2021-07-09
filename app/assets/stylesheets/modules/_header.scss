@@ -101,3 +101,5 @@ header {
         }
         .search-box {
           width: calc(100% - 160px);
+          .search-container {
+            @include up-down-center;
