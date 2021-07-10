@@ -105,3 +105,5 @@ header {
             @include up-down-center;
             min-width: 640px;
             margin: 0 auto;
+            border: $border_style_default;
+            border-radius: 4px;
