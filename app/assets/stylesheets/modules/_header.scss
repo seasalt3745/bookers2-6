@@ -103,3 +103,5 @@ header {
           width: calc(100% - 160px);
           .search-container {
             @include up-down-center;
+            min-width: 640px;
+            margin: 0 auto;
