@@ -107,3 +107,6 @@ header {
             margin: 0 auto;
             border: $border_style_default;
             border-radius: 4px;
+            &__area {
+              border-radius: 4px 0 0 4px;
+            }
