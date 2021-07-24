@@ -119,3 +119,7 @@ header {
               padding: 0 8px;
               border-top: none;
               border-bottom: none;
+              border-left: none;
+              border-right: $border_style_inner;
+              outline: none;
+              &:focus {
