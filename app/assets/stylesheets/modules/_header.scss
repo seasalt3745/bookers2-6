@@ -123,3 +123,6 @@ header {
               border-right: $border_style_inner;
               outline: none;
               &:focus {
+                border-bottom: solid 2px gray;
+              }
+            }
