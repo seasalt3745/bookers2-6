@@ -141,3 +141,6 @@ header {
               &:hover {
                 opacity: $hover_opacity;
               }
+              &:focus {
+                outline: solid 3px lightgray;
+              }
