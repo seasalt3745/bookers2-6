@@ -139,3 +139,5 @@ header {
               color: white;
               cursor: pointer;
               &:hover {
+                opacity: $hover_opacity;
+              }
